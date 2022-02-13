@@ -24,4 +24,27 @@ public class Task2Tests {
         assertArrayEquals(expected, task2.squaresOfSortedArray(input));
     }
 
+    @Test
+    void test_case3() {
+        int[] input = new int[]{-3, -2, -1, 0, 1, 2, 3, 4, 5, 6};
+        int[] expected = new int[]{0, 1, 1, 4, 4, 9, 9, 16, 25, 36};
+
+        assertArrayEquals(expected, task2.squaresOfSortedArray(input));
+    }
+
+    @Test
+    void test_case4() {
+        int[] input = new int[]{-6, -5, -4, -3, -2, -1, 0, 1, 2, 3};
+        int[] expected = new int[]{0, 1, 1, 4, 4, 9, 9, 16, 25, 36};
+
+        assertArrayEquals(expected, task2.squaresOfSortedArray(input));
+    }
+
+    @Test
+    void test_case5() {
+        int[] input = new int[]{-3, -3, -2, -1, -0, 0, 0, 1, 2, 3};
+        int[] expected = new int[]{0, 0, 0, 1, 1, 4, 4, 9, 9, 9};
+
+        assertArrayEquals(expected, task2.squaresOfSortedArray(input));
+    }
 }
